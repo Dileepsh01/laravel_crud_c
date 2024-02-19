@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class crudc extends Model
 {
     use HasFactory;
-    protected $guarded=[];
+    protected $fillable=[ 'fullname', 'email', 'password', 'phone' ];
+    // protected $guarded=[];
 }
